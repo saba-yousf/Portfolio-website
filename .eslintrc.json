@@ -1,3 +1,12 @@
 {
-  "extends": ["next/core-web-vitals", "next/typescript"]
+  "extends": ["next/core-web-vitals", "next/typescript"],
+  "rules": {
+    "semi": ["error", "always"],  // Har statement ke end mein semicolon hona chahiye
+    "quotes": ["error", "single"], // Strings ke liye single quotes istemal hon
+    "no-unused-vars": ["warn"], // Unused variables par warning
+    "react/react-in-jsx-scope": "off", // Next.js ke liye React ko import karne ki zarurat nahi
+    "jsx-a11y/alt-text": "warn", // Images ke liye alt text zaruri hai
+    "no-console": "warn" // Console logs par warning
+  }
 }
+
