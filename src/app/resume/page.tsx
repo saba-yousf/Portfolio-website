@@ -158,10 +158,10 @@ const Resume = () => {
                       <li key={index}
                       className="bg-[#232329] h-[184px] py-6 px-10 rounded-xl  flex flex-col justify-center items-center lg:items-start gap-1"
                       >
-                        <span className="text-accent">{item.Duration}</span>
+                        <span className="text-[#2391FF]">{item.Duration}</span>
                         <h3>{item.position}</h3>
                         <div className="flex items-center gap-3">
-                          <span className="w-[6px] h-[6px] rounded-full bg-accent"></span>
+                          <span className="w-[6px] h-[6px] rounded-full bg-[#2391FF]"></span>
                           <p className="text-white/60">{item.company}</p>
                         </div>
                       </li>
@@ -183,10 +183,10 @@ const Resume = () => {
                       <li key={index}
                       className="bg-[#232329] h-[184px] py-6 px-10 rounded-xl  flex flex-col justify-center items-center lg:items-start gap-1"
                       >
-                        <span className="text-accent">{item.Duration}</span>
+                        <span className="text-[#2391FF]">{item.Duration}</span>
                         <h3>{item.degree}</h3>
                         <div className="flex items-center gap-3">
-                          <span className="w-[6px] h-[6px] rounded-full bg-accent"></span>
+                          <span className="w-[6px] h-[6px] rounded-full bg-[#2391FF]"></span>
                           <p className="text-white/60">{item.institution}</p>
                         </div>
                       </li>
@@ -209,7 +209,7 @@ const Resume = () => {
                     <TooltipProvider delayDuration={100}>
                       <Tooltip>
                         <TooltipTrigger className="w-full h-[150px] bg-[#232329] rounded-xl flex justify-center items-center group">
-                          <div className="text-6xl hover:text-accent transition-all duration-300">
+                          <div className="text-6xl hover:text-[#2391FF] transition-all duration-300">
                             {skill.icon}</div>
                         </TooltipTrigger>
                         <TooltipContent>

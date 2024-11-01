@@ -53,6 +53,16 @@ const projects = [
     image: "/project4.png",
     live: "",
     github: "",
+  },
+  {
+    num: "05",
+    category: "frontend",
+    title: "Furniture Website",
+    description: "A responsive furniture website with a user-friendly interface, showcasing various furniture items with detailed",
+    stack: [{name:"Next.js"}, {name: "Tailwindcss"}, {name: "Figma Template"}] ,
+    image: "/project5.jpg",
+    live: "",
+    
   }
 ];
 
@@ -81,13 +91,13 @@ const Work = () => {
               <div className="text-8xl leading-none font-extrabold text-transparent text-outline">
                 {project.num}
               </div>
-              <h2 className="text-[42px] font-bold leading-none text-white group-hover:text-accent transition-all duration-500 capitalize">
+              <h2 className="text-[42px] font-bold leading-none text-white group-hover:text-[#2391FF] transition-all duration-500 capitalize">
                 {project.category} project
               </h2>
               <p className="text-white/60">{project.description}</p>
               <ul className="flex gap-4">
                 {project.stack.map((item, index) => (
-                  <li key={index} className="text-xl text-accent">
+                  <li key={index} className="text-xl text-[#2391FF]">
                     {item.name}
                     {index !== project.stack.length - 1 && ","}
                   </li>
@@ -99,7 +109,7 @@ const Work = () => {
                   <TooltipProvider delayDuration={100}>
                     <Tooltip>
                       <TooltipTrigger className="w-[70px] h-[70px] rounded-full bg-white/5 flex justify-center items-center group">
-                        <BsArrowUpRight className="text-white text-3xl group-hover:text-accent" />
+                        <BsArrowUpRight className="text-white text-3xl group-hover:text-[#2391FF]" />
                         <TooltipContent>
                           <p>Live project</p>
                         </TooltipContent>
@@ -111,7 +121,7 @@ const Work = () => {
                   <TooltipProvider delayDuration={100}>
                     <Tooltip>
                       <TooltipTrigger className="w-[70px] h-[70px] rounded-full bg-white/5 flex justify-center items-center group">
-                        <BsGithub className="text-white text-3xl group-hover:text-accent" />
+                        <BsGithub className="text-white text-3xl group-hover:text-[#2391FF]" />
                         <TooltipContent>
                           <p>Github repository</p>
                         </TooltipContent>
@@ -148,7 +158,7 @@ const Work = () => {
               ))}
               <WorkSliderBtns 
                 ContainerStyles="flex gap-2 absolute right-0 bottom-[calc(50%_-_22px)] xl:bottom-0 z-20 w-full justify-between xl:w-max xl:justify-none"
-                btnStyles="bg-accent  hover:bg-accent-hover text-primary text-[22px] w-[44px] h-[44px] flex justify-center items-center transition-all"
+                btnStyles="bg-[#2391FF]  hover:bg-[#2391FF]-hover text-primary text-[22px] w-[44px] h-[44px] flex justify-center items-center transition-all"
                 iconsStyles="text-2xl"
                 swiper={swiperInstance} // Pass the swiper instance here
               />
